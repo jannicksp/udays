@@ -1,0 +1,310 @@
+/*
+ SIDENS CSS...........................
+ */
+body {
+    margin: auto;
+    ;
+    padding: 0;
+
+
+    background-color: white;
+
+    color: #cdcdcd;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: tomato;
+}
+
+/*
+ NAVIGATIONSBAR...........................
+ */
+#menuToggle {
+    background-color: #951a1d;
+    display: block;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+
+
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/*
+ U-DAYS LOGO...........................
+ */
+#menuToggle img {
+    width: 200px;
+    left: 15%;
+    position: absolute;
+    top: 10px;
+
+
+}
+
+/*
+ USYNLIG CHECKBOX OVER BURGERMENU...........................
+ */
+
+#menuToggle input {
+
+    display: block;
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    top: -7px;
+    left: -4px;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    z-index: 2;
+
+
+    -webkit-touch-callout: none;
+}
+
+/*
+ BURGERMENU...........................
+ */
+#menuToggle span {
+    left: 82%;
+    display: block;
+    width: 50px;
+    height: 8px;
+    margin-bottom: 5px;
+    position: relative;
+
+
+
+    background: #ffc772;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/* 
+ LAVER BURGERBAR TIL ET KRYDS
+ */
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+/*
+ SLETTER DEN MIDTERSTE STREG I BURGERMENU...........................
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ STREGER I BURGER MENUEN I FORSKELLIGE RETNINGER...........................
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ POSITION PÅ BURGERMENU...........................
+ */
+#menu {
+    position: absolute;
+    width: 100%;
+    margin: -100px 0 0 -50px;
+    padding: 30px;
+    padding-top: 125px;
+
+
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /*
+ SAFARI HJÆLPER SÅ KRYDSET IKKE BUGGER...........................
+ */
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    font-size: 22px;
+    margin-left: 20px;
+    padding-left: 20%;
+
+}
+
+
+/*
+ ANIMATION PÅ SLIDEBAR FRA VENSTRE MOD HØJRE...........................
+ */
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+
+#menuToggle input {
+    left: 80%;
+    top: 15px;
+
+}
+
+/*
+ OVERSKRIFT PÅ CONTENT...........................
+ */
+.overskrift h1 {
+    text-align: center;
+    color: #a72828;
+
+}
+
+/*
+ YOUTUBE IFRAME...........................
+ */
+.video-frame {
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 100%;
+
+
+}
+
+/*
+ COLLAPSE BRUGT SAMMEN MED JS...........................
+ */
+.collapsible {
+
+
+    background-color: #951a1d;
+    color: white;
+    ;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 15px;
+    font-size: 22px;
+
+}
+
+
+.active,
+.collapsible:hover {
+    background-color: #a72828;
+}
+
+.content {
+
+    padding: 20px;
+    18px;
+    display: none;
+    overflow: hidden;
+    color: black;
+    font-size: 18px;
+}
+
+.wrapper {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5%;
+
+}
+
+#indhold a {
+    font-style: oblique;
+    text-decoration: underline;
+}
+.chart-content{
+  font-family: sans;
+  font-size: 30px;
+  color: #333;
+  
+}
+
+.chart-content {
+  padding: 5px;
+  width: 100%;
+  margin: 20px auto;
+  header {
+    text-align: center;
+  }
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+.chart-legend{
+  font-size: 0.8em;
+  li {
+    list-style: none;
+    span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+  }
+}
+
+        /* MEDIA QURRIES */
+        @media screen and (min-width: 992px) {
+            .overall {
+                width: 80%;
+                margin-left: 10%
+            }
+
+            Iframe {
+                height: 600px;
+                margin-bottom: 30px;
+            }
+
+            #menuToggle input {
+                width: 70px;
+                left: 81%
+            }
+
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-top: 35px;
+            margin-bottom: 35px;
+
+        }
+
+
+
+        @media screen and (max-width: 600px) {}
