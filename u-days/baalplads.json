@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "Bookbar": "Ja", "Type": "Bålplads", "Navn": "Ringvej syd 104", "Skov": "Ringvejsyd" }, "geometry": { "type": "Point", "coordinates": [ 10.1498350, 56.1169770 ] } },
+{ "type": "Feature", "properties": { "Bookbar": "Ja", "Type": "Bålplads", "Navn": "Sønderhøj7g", "Skov": "Lystrup Sønderskov" }, "geometry": { "type": "Point", "coordinates": [ 10.1593300,56.1209930 ] } },
+{ "type": "Feature", "properties": { "Bookbar": "Ja", "Type": "Bålplads", "Navn": "Sønderhøj 30", "Skov": "T" }, "geometry": { "type": "Point", "coordinates": [ 10.115652, 56.100032 ] } },
+{ "type": "Feature", "properties": { "Bookbar": "Ja", "Type": "Bålplads", "Navn": "Hasselager Allé 8", "Skov": "Moesgård Skov" }, "geometry": { "type": "Point", "coordinates": [ 10.1231290 , 56.1151650 ] } },
+{ "type": "Feature", "properties": { "Bookbar": "Ja", "Type": "Bålplads", "Navn": "Inge Lehmanns gade 10", "Skov": "Moesgård Skov" }, "geometry": { "type": "Point", "coordinates": [ 10.2151990,56.1590240 ] } }
+
+]
+
+}
